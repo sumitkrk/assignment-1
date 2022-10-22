@@ -1,0 +1,18 @@
+tup1=tuple(input("enter your 1st tuple"))
+tup2=tuple(input("enter your 2nd tuple"))
+tup3=tuple(input("enter your 3rd tuple"))
+tup4=tuple(input("enter your 4th tuple"))
+tup5=tuple(input("enter your sth tuple"))
+tup6=tuple(input("enter your 6th tuple"))
+list1=[]
+list1.append(tup1)
+list1.append(tup2)
+list1.append(tup3)
+list1.append(tup4)
+list1.append(tup5)
+list1.append(tup6)
+def last(n):
+    return n[-1]
+def sort(tuples):
+    return sorted(tuples, key=last)
+print(sort(list1))
